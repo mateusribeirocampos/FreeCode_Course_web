@@ -1,6 +1,19 @@
 body {
     background-image: url(Images/Figure1.jpg);
     background-size: 110% auto;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.established {
+    font-style: italic;
 }
 
 h1, h2, p {
@@ -8,10 +21,21 @@ h1, h2, p {
 }
 
 .menu {
-    width: 40%;
+    width: 55%;
     background-color: rgb(202, 174, 136);
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
+    font-size: large;
+    max-width: 500px;
+}
+
+hr {
+    height: 3px;
+}
+
+h1, h2 {
+    font-family: Impact, serif;
 }
 
 .item p {
