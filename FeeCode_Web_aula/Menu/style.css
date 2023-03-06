@@ -7,6 +7,8 @@ body {
 
 h1 {
     font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -29,6 +31,13 @@ h1, h2, p {
     padding: 20px;
     font-size: large;
     max-width: 500px;
+}
+
+img {
+    display: block;
+    margin-left: auto; /*Change the positions of icons*/
+    margin-right: auto;
+    margin-top: -25px;
 }
 
 hr {
@@ -69,6 +78,27 @@ footer {
     font-size: 14px;
 }
 
-a {
+.address {
+    margin-bottom: 5px;
+}
+
+.freecodecamp, .github {
     color: black;
 }
+
+.freecodecamp, .github:visited {
+    color: gray;
+}
+
+.freecodecamp:hover{
+    color: brown;
+}
+
+.github:hover {
+    color: red;
+}
+
+.freecodecamp:active, .github:active {
+    color: lightsalmon;
+}
+
