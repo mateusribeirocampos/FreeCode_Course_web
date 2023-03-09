@@ -1,0 +1,34 @@
+body {
+    background-image: url(images/background.jpg);
+    background-size: 110%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.Lunch_menu {
+    width: 60%;
+    background-color: rgb(158, 130, 54);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-size: large;
+    max-width: 500px;
+}
+
+.established {
+    font-style: italic;
+}
+
+h1, h2, h3, p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+}
