@@ -23,10 +23,12 @@ h1 {
 
 .green {
     background-color: #00FF00;
+    box-shadow: 0 0 20px 0 #3B7E20CC;
 }
 
 .blue {
     background-color: hsl(240, 100%, 50%);
+    box-shadow: 0 0 20px 0 hsla(223, 60%, 35%, 0.7);
 }
 
 .rgb {
