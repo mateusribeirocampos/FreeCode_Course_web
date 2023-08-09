@@ -15,11 +15,23 @@
                 <label for="password">Entre com sua senha: <input id="password" type="password" pattern="[a-z0-5]{8,}" required /></label>
             </fieldset>
             <fieldset>
-                <label for="personal-account"><input id="personal-account" type="radio"name="account-type" /> Personal account</label>
-                <label for="business-account"><input id="business-account" type="radio" name="account-type"/> Business account</label>
+                <label for="personal-account"><input id="personal-account" type="radio"name="account-type" /> Conta para pessoa física </label>
+                <label for="business-account"><input id="business-account" type="radio" name="account-type"/> Conta para pessoa jurídica </label>
                 <label for="terms-and-conditions"> <input id="terms-and-conditions" type="checkbox" required/> I accept the <a href="https://www.freecodecamp.com/news/terms-of-service">terms and conditions</a></label>
             </fieldset>
-            <fieldset></fieldset>
+            <fieldset>
+                <label>Carregue uma foto de perfil: <input type="file"/></label>
+                <label> Insira sua idade (anos): <input type="number" min="13" max="120" /></label>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <option value="">How did you hear about us</option>
+                </select>
+            </fieldset>
             <input type="submit" value="Submit"/>
         </body>
     </head>
