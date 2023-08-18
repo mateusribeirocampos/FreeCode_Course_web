@@ -45,3 +45,11 @@ p{
 .large, .medium{
     background-color:black ;
 }
+
+.small-text{
+    font-size: 0.85rem;
+}
+
+.calories-info h2{
+    margin: 0;
+}
