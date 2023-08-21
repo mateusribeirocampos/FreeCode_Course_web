@@ -84,15 +84,28 @@ p{
     border-bottom: 1px solid #888989;
 }
 
-.center-number{
-    display: flex;
-    align-items: center;
-
+.num-Protein{
+    margin-left: 1.5em;
 }
 
-number-span{
-    display: inline-flex;
-    align-items: center;
+.num-gordura{
+    margin-right: 1.7em;
+}
+
+.num-gorduraSaturada{
+    margin-right: 5em;
+}
+
+.num-gorduraTrans{
+    margin-right: 2.5em;
+}
+
+.num-Fibra{
+    margin-right: 1.5em;
+}
+
+.num-sodio{
+    margin-left: 3.7em;
 }
 
 .note{
