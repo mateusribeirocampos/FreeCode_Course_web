@@ -13,22 +13,43 @@
         <h1>HTML/CSS Quiz</h1>
         <nav>
             <ul>
-                <li><a href="">INFO</a></li>
-                <li><a href="">HTML</a></li>
-                <li><a href="">CSS</a></li>
+                <li><a id="h2" href="#student-info">INFO</a></li>
+                <li><a id="h2" href="#html-questions">HTML</a></li>
+                <li><a id="h2" href="css-questions">CSS</a></li>
             </ul>
         </nav>
     </header>
 <main>
     <form method="post" action="mateusrcampos@gmail.com">
+        <section role="region" aria-labelledby="student-info">
+            <h2 id="student info">Informações do estudante</h2>
+            <div>
+                <label for="Nome do estudante"></label>Nome do estudante: <input id="Nome do estudante" name="nome do estudante" type="text" placeholder="Nome"/>
+            </div>
+            <div>
+                <label for="Endereço de email">Endereço de email: </label><input id="Endereço de email" name="Endereço de email" type="email" placeholder="Email"/>
+            </div>
+            <div>
+                <label for="Data de nascimento">Idade <span class="sr-only">(Ano de nascimento): </span></label><input id="Data de nascimento" name="Data de nascimento" type="date" placeholder="mm/dd/yyyy"/>
+            </div>
+        </section role="region" aria-labelledby="student-info">
         <section>
-            
+            <h2 id="student info">HTML</h2>
+            <div class="question-block">
+                <p>1</p>
+                <fieldset class="question">
+                    <legend>
+                        
+                    </legend>
+                </fieldset>
+            </div>
+            <div class="question-block">
+                <p>2</p>
+                <fieldset class="question"></fieldset>
+            </div>
         </section>
-        <section>
-            
-        </section>
-        <section>
-            
+        <section role="region" aria-labelledby="student-info">
+            <h2 id="student info">CSS</h2>
         </section>
     </form>
 </main>
