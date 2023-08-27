@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="description"/>
     <title>Quiz FreeCodeCamp</title>
     <link rel="stylesheet" href="stylesQuiz.css"/>
 </head>
@@ -15,43 +15,98 @@
             <ul>
                 <li><a id="h2" href="#student-info">INFO</a></li>
                 <li><a id="h2" href="#html-questions">HTML</a></li>
-                <li><a id="h2" href="css-questions">CSS</a></li>
+                <li><a id="h2" href="#css-questions">CSS</a></li>
             </ul>
         </nav>
     </header>
 <main>
     <form method="post" action="mateusrcampos@gmail.com">
         <section role="region" aria-labelledby="student-info">
-            <h2 id="student info">Informações do estudante</h2>
-            <div>
-                <label for="Nome do estudante"></label>Nome do estudante: <input id="Nome do estudante" name="nome do estudante" type="text" placeholder="Nome"/>
+            <h2 id="student-info">Informações do estudante</h2>
+            <div class="info">
+                <label for="student-name">Nome do estudante: </label>
+                <input id="student-name" name="student-name" type="text" placeholder="Nome"/>
             </div>
-            <div>
-                <label for="Endereço de email">Endereço de email: </label><input id="Endereço de email" name="Endereço de email" type="email" placeholder="Email"/>
+            <div class="info">
+                <label for="student-email">Endereço de email: </label>
+                <input id="student-email" name="student-email" type="email" placeholder="Email"/>
             </div>
-            <div>
-                <label for="Data de nascimento">Idade <span class="sr-only">(Ano de nascimento): </span></label><input id="Data de nascimento" name="Data de nascimento" type="date" placeholder="mm/dd/yyyy"/>
+            <div class="info">
+                <label for="birth-date">Idade <span class="sr-only">(Ano de nascimento): </span></label>
+                <input id="birth-date" name="birth-date" type="date" placeholder="mm/dd/yyyy"/>
             </div>
-        </section role="region" aria-labelledby="student-info">
+        </section role="region" aria-labelledby="html-questions">
         <section>
-            <h2 id="student info">HTML</h2>
+            <h2 id="html-questions">HTML</h2>
             <div class="question-block">
                 <p>1</p>
-                <fieldset class="question">
+                <fieldset class="question" name="html-question-one">
                     <legend>
-                        
+                        O elemento legenda representa a descrição do conteúdo desse elemento pai fieldset
                     </legend>
+                    <ul class= answer-list>
+                        <li>
+                            <label for="q1-a1"> <input type="radio" id="q1-a1" name="q1" value="verdadeiro"/>
+                                Verdadeiro</label>
+                        </li>
+                        <li>
+                            <label for="q1-a2"> <input type="radio" id="q1-a2" name="q1" value="falso"/>
+                                Falso
+                            </label>
+                        </li>
+                    </ul>
                 </fieldset>
             </div>
             <div class="question-block">
                 <p>2</p>
-                <fieldset class="question"></fieldset>
+                <fieldset class="question" name="html-question-two">
+                    <legend>O elemento label aninha um elemento input que é necessário para ter um atributo com o mesmo valor com o id do input</legend>
+                    <ul class="answer-list">
+                        <li><label for="q2-a1"> <input type="radio" id="q2-a1" name="q2" value="verdadeiro"/>
+                            Verdadeiro
+                        </label>
+                    </li>
+                        <li><label for="q2-a2"> <input type="radio" id="q2-a2" name="q2" value="falso" />
+                            Falso
+                        </label>
+                    </li>
+                    </ul>
+                </fieldset>
             </div>
         </section>
-        <section role="region" aria-labelledby="student-info">
-            <h2 id="student info">CSS</h2>
+        <section role="region" aria-labelledby="css-questions">
+            <h2 id="css-questions">CSS</h2>
+            <div class="formrow">
+                <div class="question-block">
+                    <label for="customer">
+                        Você é um desenvolvedor frontEnd
+                    </label>
+                </div>
+                <div class="answer">
+                    <select id="customer" name="customer" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="yes">Sim</option>
+                        <option value="no">Não</option>
+                    </select>
+                </div>
+                <div class="question-block">
+                    <label for="css-questions">Você tem alguam pergunta: </label>
+                </div>
+                <div class="answer">
+                    <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Insira sua pergunta aqui" ></textarea>
+                </div>
+            </div>
         </section>
+        <button type="submit">Enviar</button>
     </form>
 </main>
+<footer>
+    <address>
+        <a href="https://freecodecamp.org">freecodecamp</a><br />
+        San Francisco<br />
+        California<br />
+        USA
+    </address>
+</footer>
 </body>
 </html>
