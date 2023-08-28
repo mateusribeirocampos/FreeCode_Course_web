@@ -88,6 +88,16 @@ input{
     font-size: 13px;
 }
 
+.click{ 
+    content: "👆";
+    font-size: 20px;
+    rotate: 45deg;
+    padding-left: 505px;
+    padding-right: 505px;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
 .info > input {
     width: 100%;
     text-align: left;
