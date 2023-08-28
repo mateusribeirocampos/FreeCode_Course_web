@@ -91,11 +91,8 @@ input{
 .click{ 
     content: "👆";
     font-size: 20px;
-    rotate: 45deg;
-    padding-left: 505px;
-    padding-right: 505px;
-    padding-top: auto;
-    padding-bottom: auto;
+    margin-left: 97%;
+    margin-top: -2px;
 }
 
 .info > input {
