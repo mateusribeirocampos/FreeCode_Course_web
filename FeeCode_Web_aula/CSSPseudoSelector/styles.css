@@ -67,7 +67,7 @@ section {
 
 #years span[class]{
     font-weight: bold;
-    width: 4.5rem;
+    width: 6.5rem;
     text-align: right;
 }
 
@@ -75,16 +75,12 @@ section {
     padding: 0 0.75rem 1.5rem 0.75rem;
 }
 
-span{
-    font-weight: normal !important;
-}
-
 table{
     /*Border collapse proprety permite que célula da borda colapse em uma única borda ao inves da borda ao redor da celula.*/
     border-collapse: collapse;
     border: 0;
     width: 100%;
-    margin: 3rem;
+    margin-top: 3rem;
     position: relative;
 }
 
@@ -102,4 +98,66 @@ tbody td{
     width: 100vw;
     max-width: 4rem;
     min-width: 4rem;
+}
+
+tbody th{
+    width: calc(100% - 12rem);
+}
+
+tr[class="total"]{
+    border: 4px double #0a0a23;
+    font-weight: bold;
+}
+
+tr[class="total"] th{
+    text-align: left;
+    padding: 0.5rem 0 0.25rem 0.5rem;
+}
+/*tr.total selecionará tr elementos onde a classe inclui total*/
+tr.total td{
+    text-align: right;
+    padding: 0 0.25rem;
+}
+
+/*Pseudo-Selector :nth-of-type() é usado para direcionar elementos específicos co base em sua ordem entre irmãos do mesmo tipo*/
+tr.total td:nth-last-of-type(3){
+    padding-right: 0.5rem;
+}
+
+/*Efeito hover na classe total elemento*/
+tr.total:hover{
+    background: #99c9ff;
+}
+
+td.current{
+    font-style: italic;
+}
+
+/*Imagem de funto*/
+tr.data{
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+tr.data th{
+    text-align: left;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+tr.data th.description{
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    padding: 1rem 0 0.75rem;
+    margin-right: -13.5rem;
+}
+
+tr.data td{
+    vertical-align: top;
+    text-align: right;
+    padding: 0.3rem 0.25rem 0;
+}
+
+tr.data td:last-of-type{
+    padding: 0.5rem;
 }
