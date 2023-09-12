@@ -108,3 +108,53 @@ body{
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
 }
+
+.cat-left-eye{
+    width: 30px;
+    height: 40px;
+    background-color: #000;
+    position: absolute;
+    top: 54px;
+    left: 39px;
+    border-radius: 60%;
+    transform: rotate(25deg);
+}
+
+.cat-right-eye{
+    background-color: #000;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: 54px;
+    left: 134px;
+    border-radius: 60%;
+    transform: rotate(-25deg);
+}
+
+.cat-left-inner-eye{
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
+    top: 8px;
+    left: 2px;
+    border-radius: 60%;
+    position: absolute;
+    transform: rotate(10deg);
+}
+
+.cat-right-inner-eye{
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    border-radius: 60%;
+    transform: rotate(-5deg);
+}
+
+.cat-nose{
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #442c2c;
+}
