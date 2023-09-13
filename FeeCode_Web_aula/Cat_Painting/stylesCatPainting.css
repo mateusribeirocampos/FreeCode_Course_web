@@ -247,11 +247,11 @@ body{
     width: 185px;
     height: 280px;
     position: absolute;
-    top: 170px;
-    left: 590px;
+    top: -61px;
+    left: 8px;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
-    margin: auto;
+    z-index: 1;
 }
 
 .tie-left{
