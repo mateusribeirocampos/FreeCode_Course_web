@@ -61,6 +61,17 @@ body {
     top: 40%;
     left: 23.5%;
 }
+.penguin-body::before{
+  content: "";
+  position: absolute;
+  background-color: gray;
+  width: 50%;
+  height: 45%;
+  top: 10%;
+  left: 25%;
+  border-radius: 0% 0% 100% 100%;
+  opacity: 70%;
+}
 .ground {
     width: 100vw;
     height: 400px;
