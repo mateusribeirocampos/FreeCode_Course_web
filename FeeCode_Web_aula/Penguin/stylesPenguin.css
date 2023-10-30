@@ -1,3 +1,6 @@
+:root{
+  --penguin-face: white;
+}
 /*Define o estilo para o corpo da página*/
 body {
   background: linear-gradient(4deg, rgb(118, 201, 255), rgb(247, 255, 222));
@@ -52,6 +55,27 @@ body {
   top: 10%;
   left: 25%;
   z-index: 1;
+}
+.face{
+  width: 60%;
+  height: 70%;
+  background-color: var(--penguin-face);
+  border-radius: 70% 70% 60% 60%; /**/
+  top: 15%;
+}
+.face.left{
+  left: 5%;
+}
+.face.right{
+  right: 5%;
+}
+.chin{
+  width: 90%;
+  height: 70%;
+  background-color: var(--penguin-face);
+  top: 25%;
+  left: 5%;
+  border-radius: 70% 70% 100% 100%;
 }
 .penguin-body{
     width: 53%;
