@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90px;
+    background-color: #e0a6d9;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    /*Remove horizontal e vertical scrolbars*/
+    overflow: hidden;
+    background-color: #e0a6d9;
+}
+header span{
+    -webkit-text-stroke-color:#e0a6d9;
+    -webkit-text-fill-color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 20px;
+    line-height: 80px;
+}
+hr{
+    width: 100%;
+    height: 3px;
+    background-color: #e0a6d9;
+    margin-top: 1px;
+}
