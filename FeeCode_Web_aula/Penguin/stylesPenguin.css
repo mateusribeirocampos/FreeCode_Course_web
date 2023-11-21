@@ -1,144 +1,193 @@
 :root{
-  --penguin-face: white;
+  --penguin-face: white; /*cor do rosto do pinguim*/
+  --penguin--picorna: orange; /*cor do bico do pinguim*/
 }
 /*Define o estilo para o corpo da página*/
 body {
-  background: linear-gradient(4deg, rgb(118, 201, 255), rgb(247, 255, 222));
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100vh;
+  background: linear-gradient(4deg, rgb(118, 201, 255), rgb(247, 255, 222)); /*cor de fundo*/
+  margin: 0; /*margem externa*/
+  padding: 0; /*margem interna*/
+  width: 100%; /*largura*/
+  height: 100vh; /*altura*/
   /*Remove horizontal e vertical scrolbars*/
+  /* 
+    FILEPATH: /c:/Users/Mateus Campos/Documents/Aulas/FreeCode_Web/FeeCode_Web_aula/Penguin/stylesPenguin.css
+    Description: Sets the overflow property to hidden, which hides any content that exceeds the dimensions of its container.
+  */
   overflow: hidden;
+
 }
-.left-mountain {
-  width: 300px;
-  height: 300px;
-  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
-  position: absolute;
-  transform: skew(0deg, 44deg);
-  z-index: 2;
-  margin-top: 100px;
+.left-mountain { /*montanha esquerda*/
+  width: 300px; /*largura*/
+  height: 300px;  /*altura*/
+  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255)); /*cor de fundo*/
+  position: absolute; /*posição absoluta*/
+  transform: skew(0deg, 44deg); /*inclinação*/
+  z-index: 2; /*z-index*/
+  margin-top: 100px; /*margem superior*/
 }
-.back-mountain {
-  width: 300px;
-  height: 300px;
-  background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
-  position: absolute;
-  z-index: 1;
-  transform: rotate(45deg);
-  left: 110px;
-  top: 225px;
+.back-mountain { /*montanha de trás*/
+  width: 300px; /*largura*/
+  height: 300px; /*altura*/
+  background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255)); /*cor de fundo*/
+  position: absolute; /*posição absoluta*/
+  z-index: 1; /*z-index*/
+  transform: rotate(45deg); /*rotação*/
+  left: 110px; /*margem esquerda*/
+  top: 225px; /*margem superior*/
 }
-.sun {
-  width: 200px;
-  height: 200px;
-  background: yellow;
-  position: absolute;
-  border-radius: 50%;
-  top: -75px;
-  right: -75px;
+.sun { /*sol*/
+  width: 200px; /*largura*/
+  height: 200px; /*altura*/
+  background: yellow; /*cor de fundo*/
+  position: absolute; /*posição absoluta*/
+  border-radius: 50%; /*borda arredondada*/
+  top: -75px; /*margem superior*/
+  right: -75px; /*margem direita*/
 }
-.penguin {
-  width: 300px;
-  height: 300px;
-  margin: auto;
-  margin-top: 75px;
-  z-index: 4;
-  position: relative;
+.penguin { /*pinguim*/
+  width: 300px; /*largura*/
+  height: 300px;  /*altura*/
+  margin: auto; /*margem*/
+  margin-top: 75px; /*margem superior*/
+  z-index: 4; /*z-index*/
+  position: relative; /*posição relativa*/
 }
-.penguin-head {
-  width: 50%;
-  height: 45%;
-  background: linear-gradient(45deg, gray, rgb(239, 240, 228));
-  border-radius: 70% 70% 65% 65%;
-  top: 10%;
-  left: 25%;
-  z-index: 1;
+.penguin-head { /*cabeça do pinguim*/
+  width: 50%; /*largura*/
+  height: 45%;  /*altura*/
+  background: linear-gradient(45deg, gray, rgb(239, 240, 228)); /*cor de fundo*/
+  border-radius: 70% 70% 65% 65%; /*borda arredondada*/
+  top: 10%; /*margem superior*/
+  left: 25%; /*margem esquerda*/
+  z-index: 1; /*z-index*/
+} 
+.face{ /*rosto*/
+  width: 60%; /*largura da face do pinguim*/
+  height: 70%; /*altura da face do pinguim*/
+  background-color: var(--penguin-face); /*cor de fundo usando a variável estabelecida no root*/
+  border-radius: 70% 70% 60% 60%; /*arrendondamento das margens do rosto*/
+  top: 15%; /*margem superior do rosto*/
 }
-.face{
-  width: 60%;
-  height: 70%;
-  background-color: var(--penguin-face);
-  border-radius: 70% 70% 60% 60%; /**/
-  top: 15%;
+.face.left{ /*rosto esquerdo*/
+  left: 5%; /*margem esquerda*/
 }
-.face.left{
-  left: 5%;
+.face.right{ /*rosto direito*/
+  right: 5%; /*margem direita*/
 }
-.face.right{
-  right: 5%;
+.chin{ /*queixo*/
+  width: 90%; /*largura do queixo*/
+  height: 70%; /*altura do queixo*/
+  background-color: var(--penguin-face); /*cor de fundo usando a variável estabelecida no root*/
+  top: 25%; /*margem superior*/
+  left: 5%; /*margem esquerda*/
+  border-radius: 70% 70% 100% 100%; /*arrendondamento das margens do queixo*/
 }
-.chin{
-  width: 90%;
-  height: 70%;
-  background-color: var(--penguin-face);
-  top: 25%;
-  left: 5%;
-  border-radius: 70% 70% 100% 100%;
+.eye{ /*olho*/
+  width: 15%; /*Largura do olho*/
+  height: 17%; /*Altura do olho*/
+  background-color: black; /*Cor do olho*/
+  top: 45%; /*Margem superior*/
+  border-radius: 50%; /*Arredondamento das margens*/
 }
-.eye{
-  width: 15%;
-  height: 17%;
-  background-color: black;
-  top: 45%;
-  border-radius: 50%;
+.eye.left{ /*olho esquerdo*/
+  left: 25%; /*Margem esquerda*/
 }
-.eye.left{
-  left: 25%;
+.eye.right{ /*olho direito*/
+  right: 25%; /*Margem direita*/
 }
-.eye.right{
-  right: 25%;
+.eye-lid{ /*pálpebra*/
+  width: 150%; /*Largura da pálpebra*/
+  height: 100%; /*Altura da pálpebra*/
+  background-color: var(--penguin-face); /*Cor de fundo usando a variável estabelecida no root*/
+  top: 25%; /*Margem superior*/
+  left: -23%; /*Margem esquerda*/
+  border-radius: 50%; /*Arredondamento das margens*/
 }
-.eye-lid{
-  width: 150%;
-  height: 100%;
-  background-color: var(--penguin-face);
-  top: 25%;
-  left: -23%;
-  border-radius: 50%;
+.blush{ /*bochecha*/
+  width: 15%; /*Largura da bochecha*/
+  height: 10%; /*Altura da bochecha*/
+  background-color: pink; /*Cor da bochecha*/
+  top: 65%; /*Margem superior*/
+  border-radius: 50%; /*Arredondamento das margens*/
 }
-.blush{
-  width: 15%;
-  height: 10%;
-  background-color: pink;
-  top: 65%;
-  border-radius: 50%;
+.blush.left{ /*bochecha esquerda*/
+  left: 15%; /*Margem esquerda*/
+} 
+.blush.right{ /*bochecha direita*/
+  right: 15%; /*Margem direita*/
 }
-.blush.left{
-  left: 15%;
+.beak{ /*bico do pinguen*/
+  height: 10%; /*altura do bico*/
+  background-color: var(--penguin--picorna); /*cor do bico*/
+  border-radius: 50%; /*formato do bico*/
 }
-.blush.right{
-  right: 15%;
+.beak.top{ /*bico superior*/
+  width: 20%; /*largura do bico parte superior*/
+  top: 60%; /*margem superior*/
+  left: 40%; /*margem esquerda*/
 }
-.penguin-body{
-    width: 53%;
-    height: 45%;
-    background: linear-gradient(45deg, rgb(134, 133, 133) 0%, rgb(234, 231, 231) 25%, white 67%);
-    border-radius: 80% 80% 100% 100%;
-    top: 40%;
-    left: 23.5%;
+.beak.bottom{ /*bico inferior*/
+  width: 16%; /*4% a menos do que a largura do beak top*/
+  top: 65%; /*5% a mais do que margem superior do beak top*/
+  left: 42%; /*2% a mais do que margem da esquerda do beak top*/
 }
-.penguin-body::before{
-  content: "";
-  position: absolute;
-  background-color: gray;
-  width: 50%;
-  height: 45%;
-  top: 10%;
-  left: 25%;
-  border-radius: 0% 0% 100% 100%;
-  opacity: 70%;
+.shirt{ /*camisa*/
+  /*font: bold 25px Helvetica, sans-serif*/
+  font-size: 25px; /*tamanho da fonte*/
+  font-family: Helvetica, sans-serif; /*fonte*/
+  font-weight: bold; /*negrito*/
+  top: 170px; /*margem superior*/
+  left: 126px; /*margem esquerda*/
+  z-index: 1; /*z-index*/
+  color: #6a6969; /*cor da fonte*/
 }
-.ground {
-    width: 100vw;
-    height: 400px;
-    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
-    z-index: 3;
-    position: absolute;
-    margin-top: -58px;
+.shirt div{ /*camisa div*/
+  font-weight: normal; /*fonte normal*/
+  top: 20px; /*margem superior*/
+  left: 10px; /*margem esquerda*/
+}
+.foot{ /*pé*/
+  width: 15%; /*largura do pé*/
+  height: 30%; /*altura do pé*/
+  background-color: var(--penguin--picorna); /*cor do pé*/
+  top: 85%; /*margem superior*/
+  border-radius: 50%; /*arredondamento das margens*/
+}
+.foot.left{ /*pé esquerdo*/
+  left: 25%; /*margem esquerda*/
+}
+.foot.right{ /*pé direito*/
+  right: 25%; /*margem direita*/
+}
+.penguin-body{ /*corpo do pinguim*/
+    width: 53%; /*largura*/
+    height: 45%; /*altura*/
+    background: linear-gradient(45deg, rgb(134, 133, 133) 0%, rgb(234, 231, 231) 25%, white 67%); /*cor de fundo*/
+    border-radius: 80% 80% 100% 100%; /*arredondamento das margens*/
+    top: 40%; /*margem superior*/
+    left: 23.5%; /*margem esquerda*/
+}
+.penguin-body::before{ /*corpo do pinguim antes*/
+  content: ""; /*conteúdo*/
+  position: absolute; /*posição absoluta*/
+  background-color: gray; /*cor de fundo*/
+  width: 50%; /*largura*/
+  height: 45%; /*altura*/
+  top: 10%; /*margem superior*/
+  left: 25%; /*margem esquerda*/
+  border-radius: 0% 0% 100% 100%; /*arredondamento das margens*/
+  opacity: 70%; /*opacidade*/
+}
+.ground { /*chão*/
+    width: 100vw; /*largura*/
+    height: 400px; /*altura*/
+    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255)); /*cor de fundo*/
+    z-index: 3; /*z-index*/
+    position: absolute; /*posição absoluta*/
+    margin-top: -58px; /*margem superior*/
   }
   /* Direcionando todos os elementso descendentes do elemento .peguin e posicionamento abosoluto*/
-.penguin *{
-    position: absolute;
+.penguin *{ 
+    position: absolute; /*posição absoluta*/ 
 }
