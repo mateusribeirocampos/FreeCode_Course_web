@@ -1,6 +1,7 @@
 :root{
   --penguin-face: white; /*cor do rosto do pinguim*/
   --penguin--picorna: orange; /*cor do bico do pinguim*/
+  --penguin-skin: gray; /*cor da pele do pinguim*/
 }
 /*Define o estilo para o corpo da página*/
 body {
@@ -56,7 +57,7 @@ body {
 .penguin-head { /*cabeça do pinguim*/
   width: 50%; /*largura*/
   height: 45%;  /*altura*/
-  background: linear-gradient(45deg, gray, rgb(239, 240, 228)); /*cor de fundo*/
+  background: linear-gradient(45deg, var(--penguin-skin), rgb(239, 240, 228)); /*cor de fundo*/
   border-radius: 70% 70% 65% 65%; /*borda arredondada*/
   top: 10%; /*margem superior*/
   left: 25%; /*margem esquerda*/
@@ -153,12 +154,15 @@ body {
   background-color: var(--penguin--picorna); /*cor do pé*/
   top: 85%; /*margem superior*/
   border-radius: 50%; /*arredondamento das margens*/
+  z-index: -1; /*z-index*/
 }
 .foot.left{ /*pé esquerdo*/
   left: 25%; /*margem esquerda*/
+  transform: rotate(80deg); /*rotação*/
 }
 .foot.right{ /*pé direito*/
   right: 25%; /*margem direita*/
+  transform: rotate(-80deg); /*rotação*/
 }
 .penguin-body{ /*corpo do pinguim*/
     width: 53%; /*largura*/
@@ -171,13 +175,29 @@ body {
 .penguin-body::before{ /*corpo do pinguim antes*/
   content: ""; /*conteúdo*/
   position: absolute; /*posição absoluta*/
-  background-color: gray; /*cor de fundo*/
+  background-color: var(--penguin-skin); /*cor de fundo*/
   width: 50%; /*largura*/
   height: 45%; /*altura*/
   top: 10%; /*margem superior*/
   left: 25%; /*margem esquerda*/
   border-radius: 0% 0% 100% 100%; /*arredondamento das margens*/
   opacity: 70%; /*opacidade*/
+}
+.arm{ /*braço*/
+  width: 30%; /*largura*/
+  height: 60%; /*altura*/
+  background: linear-gradient(90deg, var(--penguin-skin), rgb(209, 210, 199)); /*cor de fundo*/
+}
+.arm.left{ /*braço esquerdo*/
+  top: 35%; /*margem superior*/
+  left: 5%; /*margem esquerda*/
+  transform-origin: 0% 0%; /*origem da transformação*/
+  transform: rotate(130deg) scaleX(-1); /*rotação*/
+}
+.arm.right{ /*braço direito*/
+  top: 0%; /*margem superior*/
+  right: -5%; /*margem direita*/
+  transform: rotate(-45deg);
 }
 .ground { /*chão*/
     width: 100vw; /*largura*/
