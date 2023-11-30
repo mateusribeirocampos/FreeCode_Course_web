@@ -1,3 +1,0 @@
-# FreeCodeCamp
-
-## Responsive Web Design 
