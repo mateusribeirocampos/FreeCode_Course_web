@@ -53,6 +53,14 @@ body {
   margin-top: 75px; /*margem superior*/
   z-index: 4; /*z-index*/
   position: relative; /*posição relativa*/
+  transition-timing-function: ease-in-out; /*função de tempo da animação*/
+  transition-delay: 0ms; /*função de tempo da animação*/
+  transition-duration: 1s; /*função de tempo da animação*/
+
+}
+.penguin:active{
+  transform: scale(1.5); /*escala*/
+  cursor: not-allowed; /*cursor*/
 }
 .penguin-head { /*cabeça do pinguim*/
   width: 50%; /*largura*/
@@ -187,21 +195,38 @@ body {
   width: 30%; /*largura*/
   height: 60%; /*altura*/
   background: linear-gradient(90deg, var(--penguin-skin), rgb(209, 210, 199)); /*cor de fundo*/
+  border-radius: 30% 30% 30% 120%; /*arredondamento das margens*/
+  z-index: -1; /*z-index*/
 }
 .arm.left{ /*braço esquerdo*/
   top: 35%; /*margem superior*/
   left: 5%; /*margem esquerda*/
   transform-origin: 0% 0%; /*origem da transformação*/
   transform: rotate(130deg) scaleX(-1); /*rotação*/
+  animation: wave 3s linear infinite; /*função de tempo da animação*/
 }
 .arm.right{ /*braço direito*/
   top: 0%; /*margem superior*/
   right: -5%; /*margem direita*/
   transform: rotate(-45deg);
 }
+@keyframes wave {
+  10% {
+    transform: rotate(110deg) scaleX(-1);
+  }
+  20% {
+    transform: rotate(130deg) scaleX(-1);
+  }
+  30% {
+    transform: rotate(110deg) scaleX(-1);
+  }
+  40% {
+    transform: rotate(130deg ) scaleX(-1);
+  }
+}
 .ground { /*chão*/
     width: 100vw; /*largura*/
-    height: 400px; /*altura*/
+    height: calc(100vh - 300px); /*altura*/
     background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255)); /*cor de fundo*/
     z-index: 3; /*z-index*/
     position: absolute; /*posição absoluta*/
