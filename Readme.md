@@ -10,6 +10,8 @@ O curso de Responsive Web Design da FreeCodeCamp é uma ótima maneira de aprend
 
 O repositório está organizado em pastas, cada uma correspondendo a um projeto ou exercício específico do curso. Aqui está uma visão geral da estrutura:
 
+- **/Playground**: Personal web design
+
 - **/projeto-1**: Learn HTML by Building a Cat Photo App.
 - **/projeto-2**: Learn basic CSS by Building a Cafe Menu 
 - **/projeto-3**: Learn CSS colors By Building a Set of Colored Markers
