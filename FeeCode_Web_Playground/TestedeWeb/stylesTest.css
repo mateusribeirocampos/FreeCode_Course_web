@@ -8,10 +8,13 @@ header {
   text-align: center;
 }
 li {
-  display: inline;
+  display: inline-block;
+  margin-right: 70px;
+  font-size: 20px;
   padding: 10px;
   color: white;
   list-style: none;
+  justify-content: space-evenly;
 }
 a{
   color: white;
