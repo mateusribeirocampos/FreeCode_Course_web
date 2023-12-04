@@ -2,7 +2,7 @@
     --main-white: #fff;
     --main-red: #be3144;
     --main-blue: #45567d;
-    --main-grey: #303841;
+    --main-gray: #303841;
 }
 *{
     margin: 0;
@@ -68,7 +68,9 @@ a{
     color: var(--main-white);
 }
 nav{
-    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -106,7 +108,7 @@ li{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 600px;
+    height: 700px;
     background-color: #000;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
