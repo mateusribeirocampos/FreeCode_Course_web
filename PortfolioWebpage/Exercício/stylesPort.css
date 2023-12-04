@@ -67,11 +67,8 @@ a{
     text-decoration: none;
     color: var(--main-white);
 }
-
 nav{
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -81,7 +78,7 @@ nav{
 }
 .nav-list{
     display: flex;
-    margin-right: 2rem;
+    justify-content: flex-end;
 }
 @media (max-width: 28.75em){
     .nav{
@@ -109,7 +106,7 @@ li{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 600px;
     background-color: #000;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
@@ -121,4 +118,11 @@ li{
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
+}
+.welcome-section a{
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border: 1px solid var(--main-red);
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
 }
