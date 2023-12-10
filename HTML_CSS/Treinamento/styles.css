@@ -10,8 +10,8 @@ header{
 nav{
     display: flex;
     background-color: #300303;
-    height: 20px;
-    width: 80%;
+    height: 30px;
+    width: 90%;
 }
 nav ul{
     display: flex;
@@ -33,9 +33,10 @@ nav ul li a:hover{
 }
 h1{
     color: #fff;
-    text-align: left;
-    padding-top: 30px;
+    text-align: left;;
+    padding-top: 25px;
     font-size: 50px;
+    margin-left: 50px;
 }
 section{
     display: grid;
