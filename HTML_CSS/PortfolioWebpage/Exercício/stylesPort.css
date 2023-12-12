@@ -50,7 +50,12 @@ h1, h2 {
 h1{
     font-size: 6rem;
 }
-h2{
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+h2 {
     font-size: 4.2rem;
 }
 ul{
@@ -108,7 +113,7 @@ li{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-color: #000;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
@@ -127,4 +132,9 @@ li{
     border: 1px solid var(--main-red);
     border-radius: 2rem;
     transition: all 0.3s ease-in-out;
+}
+.contact-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
