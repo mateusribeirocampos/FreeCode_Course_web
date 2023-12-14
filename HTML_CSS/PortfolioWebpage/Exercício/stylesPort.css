@@ -54,6 +54,8 @@ h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-align: center;
+    background-color: #be3144;
+    color: var(--main-white);
 }
 h2 {
     font-size: 4.2rem;
@@ -63,10 +65,12 @@ ul{
 }
 p{
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px
+    margin: 26px;
+    padding: 26px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: justify;
+    color: var(--main-gray);
 }
 a{
     text-decoration: none;
@@ -137,4 +141,7 @@ li{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+}
+.github{
+    color: var(--main-red);
 }
