@@ -3,6 +3,7 @@
     --main-red: #be3144;
     --main-blue: #45567d;
     --main-gray: #303841;
+    --main-yellow: #f2a365;
 }
 *{
     margin: 0;
@@ -72,7 +73,7 @@ p{
     text-align: justify;
     color: var(--main-gray);
 }
-a{
+.menu{
     text-decoration: none;
     color: var(--main-white);
 }
@@ -142,6 +143,10 @@ li{
     justify-content: center;
     margin-top: 2rem;
 }
-.github{
-    color: var(--main-red);
+.github a{
+    color: var(--main-gray);
+    text-decoration: none;
+}
+.github a:hover{
+    color: var(--main-yellow);
 }
