@@ -1,37 +1,54 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 body{
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
+    width: 80%;
+    margin: auto;
     color: #000;
-    line-height: 1.5;
+    background-color: #ccc;
+    margin-bottom: 56px;
+    color: #444;
 }
 h1{
     font-size: 2em;
-    color: rgb(12, 12, 83);
+    color: #061761;
     text-align: center;
-    margin: 20px 50px 20px 50px;
-    padding: 0;
-    background-color: #c6bee6;
+    margin-bottom: 0;
+    background-color: #acafd4;
 }
 .paragrafo1{
     font-size: 0.8em;
     text-align: center;
-    margin: 20px;
+    margin: 12px;
 }
 h2{
     font-size: 1.5em;
-    color: rgb(12, 12, 83);
-    margin: 20px 50px 20px 50px;
-    background-color: #c6bee6;
+    color: #061761;
+    margin-top: 48px;
+    margin-bottom: 12px;
+    background-color: #b6b6b6;
+    border-bottom: 1px solid #000;
+    padding: 10px;
 }
-p{
-    font-size: 1em;
-    margin: 20px 50px 20px 50px;
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    text-shadow: #061761 1px 1px;
+    background-color: rgb(207, 187, 187);
+    border-radius: 3px;
 }
 h3{
     font-size: 1.2em;
-    margin: 20px 50px 20px 50px;
+    color: #061761;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+ul{
+    padding-left: 0;
+}
+li{
+    list-style-position: inside;
+    margin-bottom: 10px;
+    padding: 0;
 }
