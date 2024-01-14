@@ -35,7 +35,7 @@ a{
 a:hover{
     /*text-decoration: underline;*/
     /*text-shadow: #061761 1px 1px;*/
-    background-color: rgb(187, 184, 184);
+    background-color: #bbb8b8;
     border-radius: 3px;
     color: #000;
 }
