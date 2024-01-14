@@ -33,10 +33,11 @@ a{
     text-decoration: none;
 }
 a:hover{
-    text-decoration: underline;
-    text-shadow: #061761 1px 1px;
-    background-color: rgb(207, 187, 187);
+    /*text-decoration: underline;*/
+    /*text-shadow: #061761 1px 1px;*/
+    background-color: rgb(187, 184, 184);
     border-radius: 3px;
+    color: #000;
 }
 h3{
     font-size: 1.2em;
