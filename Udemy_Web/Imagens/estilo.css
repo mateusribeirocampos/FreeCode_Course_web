@@ -9,3 +9,10 @@ img{
 body{
     background-color: #e4dada;
 }
+legend{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    justify-content: center;
+    margin: 0 20px;
+}
