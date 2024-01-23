@@ -1,0 +1,35 @@
+body{
+    font-size: 22px;
+    font-family: sans-serif;
+    width: 700px;
+    margin: auto;
+    
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: bottom;
+}
+legend{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    justify-content: center;
+    margin: 0 20px;
+}
+img{
+    width: 200px;
+}
+.img-logo{
+    width: 200px;
+}
+.img-html{
+    float: left;
+}
+.img-css{
+    float: right;
+}
+p{
+    line-height: 1.5;
+    text-align: justify;
+}
