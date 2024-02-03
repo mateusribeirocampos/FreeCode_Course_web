@@ -25,7 +25,10 @@ p{
     margin: 40px;
     padding: 50px;
     color: black;
-    background-repeat: inherit;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: left top;
 }
 h2{
     box-shadow: #fff 0px 0px 10px;
