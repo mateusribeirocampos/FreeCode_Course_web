@@ -19,10 +19,13 @@ h1{
     padding: 0;
 }
 p{
+    background-image: url(/Udemy_Web/Introducao-Imagens/images/walk.gif);
     font-size: 1em;
     text-align: justify;
     margin: 40px;
     padding: 50px;
+    color: black;
+    background-repeat: inherit;
 }
 h2{
     box-shadow: #fff 0px 0px 10px;
