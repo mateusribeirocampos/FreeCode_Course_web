@@ -1,0 +1,8 @@
+body {
+    font-size: 200%;
+    line-height: 2;
+    color: white;
+    background: url(/Udemy_Web/Introducao-Imagens/images/tile-pattern.png) #4e4e4e no-repeat fixed;
+    /*Trabalhar apenas com background pode levar deixar falhas*/
+    /*o último elemento prevalece*/
+}
