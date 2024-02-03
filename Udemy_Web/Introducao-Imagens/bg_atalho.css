@@ -1,8 +1,34 @@
 body {
     font-size: 200%;
     line-height: 2;
-    color: white;
+    font-family: sans-serif;
+    color: #fff;
     background: url(/Udemy_Web/Introducao-Imagens/images/tile-pattern.png) #4e4e4e no-repeat fixed;
     /*Trabalhar apenas com background pode levar deixar falhas*/
     /*o último elemento prevalece*/
+    background-repeat: inherit;
+    background-color: #291111;
+    background-size: cover 100%;
+}
+h1{
+    box-shadow: #fff 0px 0px 10px;
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 1em;
+    text-align: justify;
+    margin: 40px;
+    padding: 50px;
+}
+h2{
+    box-shadow: #fff 0px 0px 10px;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
