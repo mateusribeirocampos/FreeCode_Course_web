@@ -10,6 +10,7 @@ body{
 header{
     background-image: url("/Udemy_Web/ProjetoCSS_Inicio/imagens/bg-2.jpg");
     background-position: center top;
+    background-size: cover;
     text-align: center;
     width: 100%;
     padding: 250px;
@@ -19,10 +20,12 @@ nav{
 }
 nav li{
     display: inline-flex;
-    padding: 10px;
-    text-decoration: none;
-    border: 20px;
-    border-color: gray;
-    top: 0;
-    right: 0;
+    margin: 10px;
+}
+h1{
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 0;
+    box-shadow: 0 0 10px 0 #000;
 }
