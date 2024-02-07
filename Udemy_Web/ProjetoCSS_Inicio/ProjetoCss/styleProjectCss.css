@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #d0d4f5;
+}
+header{
+    background-image: url("/Udemy_Web/ProjetoCSS_Inicio/imagens/bg-2.jpg");
+    background-position: center top;
+    text-align: center;
+    width: 100%;
+    padding: 250px;
+}
+nav{
+    text-align: right;
+}
+nav li{
+    display: inline-flex;
+    padding: 10px;
+    text-decoration: none;
+    border: 20px;
+    border-color: gray;
+    top: 0;
+    right: 0;
+}
