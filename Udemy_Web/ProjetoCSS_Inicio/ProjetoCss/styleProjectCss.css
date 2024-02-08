@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(169, 168, 168);
 }
 header{
     background-image: url(/Udemy_Web/ProjetoCSS_Inicio/imagens/bg-3.jpg);
@@ -23,22 +24,22 @@ ul{
     padding: 10px;
 }
 li{
-    margin: 0 20px;
+    margin: 10px 10px;
 }
-a{
+.menu{
     text-decoration: none;
     color: white;
     font-size: 30px;
     font-weight: bold;
     border: 2px solid white;
-    padding: 5px 20px;
+    padding: 5px 10px;
     background-color: gray;
 }
 h1{
     color: white;
-    font-size: 70px;
+    font-size: 65px;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 250px;
     margin-bottom: 30px;
     font-weight: bold;
 }
@@ -49,4 +50,34 @@ h1{
     margin: 5px 500px;
     color: white;
     border-bottom: white solid 2px;
+}
+section{
+    background-color: white;
+    margin: 10px 150px;
+    padding: 5px;
+}
+h2{
+    background-color: rgb(228, 223, 223);
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgb(42, 41, 41);
+    width: 95%;
+}
+.text{
+    margin: 10px 10px;
+    padding: 10px;
+    text-align: justify;
+}
+.footer{
+    text-align: center;
+    background-color: rgb(70, 68, 68);
+    color: white;
+    height: 40px;
+    padding: 60px;
+}
+.atext{
+    background-color: rgb(182, 181, 181);
+    border-radius: 10px;
+    padding: 10px;
+    color: blue;
 }
