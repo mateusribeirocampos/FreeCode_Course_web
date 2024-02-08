@@ -1,31 +1,52 @@
-*{
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: Arial, sans-serif;
-    background-color: #d0d4f5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header{
-    background-image: url("/Udemy_Web/ProjetoCSS_Inicio/imagens/bg-2.jpg");
-    background-position: center top;
+    background-image: url(/Udemy_Web/ProjetoCSS_Inicio/imagens/bg-3.jpg);
+    background-attachment: fixed;
     background-size: cover;
-    text-align: center;
-    width: 100%;
-    padding: 250px;
+    background-position: top;
+    height: 700px;
 }
 nav{
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    width: 100%;
 }
-nav li{
-    display: inline-flex;
-    margin: 10px;
+ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+li{
+    margin: 0 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 5px 20px;
+    background-color: gray;
 }
 h1{
-    color: #fff;
-    font-size: 50px;
-    text-transform: uppercase;
-    margin-top: 0;
-    box-shadow: 0 0 10px 0 #000;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.para-menu{
+    text-align: center;
+    background-color: rgb(64, 63, 63);
+    padding: 20px 10px;
+    margin: 5px 500px;
+    color: white;
+    border-bottom: white solid 2px;
 }
