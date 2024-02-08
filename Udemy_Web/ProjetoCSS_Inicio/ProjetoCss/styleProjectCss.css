@@ -35,6 +35,7 @@ li{
     padding: 5px 10px;
     background-color: gray;
     text-shadow: 1px 1px 5px black; /* adicional */
+    border-radius: 5px;
 }
 h1{
     color: white;
@@ -53,6 +54,7 @@ h1{
     color: white;
     border-bottom: white solid 2px;
     text-shadow: 1px 1px 5px black; /* adicional */
+    border-radius: 5px;
 }
 section{
     background-color: white;
