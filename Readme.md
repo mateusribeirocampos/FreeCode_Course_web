@@ -1,4 +1,4 @@
-# Responsive Web Design - FreeCodeCamp
+# Responsive Web Design - FreeCodeCamp - Udemy
 
 Bem-vindo ao meu repositório de desenvolvimento do curso de Responsive Web Design da FreeCodeCamp. Aqui, você encontrará todos os projetos e exercícios que estou trabalhando para aprimorar minhas habilidades em design responsivo.
 
