@@ -1,19 +1,26 @@
+header{
+    background-image: url(/Udemy_Web/ProjetoCSS_Inicio/imagens/bg-3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    height: 700px;
+}
+
+
 
 .footer{
     color: #fff;
-    font-size: 12px;
-    z-index: 1;
     text-align: center;
 }
 
 footer{
-    background-image: url(/Udemy_Web/ProjetoCSS_Inicio/imagens/infinity-pool.webp);
-    background-position: center;
+    background-image: url(/Udemy_Web/ProjetoCSS_Inicio/imagens/bg-3.jpg);
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(50%);
+    background-attachment: fixed;
+    filter: brightness(80%);
     /*background-color: #333;*/
-    color: #fff;
     padding: 30px;
     margin: 0;
 }
