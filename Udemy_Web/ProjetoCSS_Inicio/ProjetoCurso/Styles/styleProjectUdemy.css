@@ -1,62 +1,103 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(204, 204, 204);
 }
-nav{
-    display: flex;
-    justify-content: flex-end;
-    top: 0;
-    right: 0;
-    width: 100%;
-}
-ul{
-    display: flex;
-    list-style: none;
-    padding: 20px;
-}
-li{
-    margin: 20px;
-}
-.lihero{
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    border: solid 2px #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #a4a2a2;
-}   
-.hero{
+
+.hero {
     background-image: url(/Udemy_Web/ProjetoCSS_Inicio/imagens/bg-3.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: right center;
     height: 700px;
+    padding-top: 1px;
 }
-.hero-content{
+
+.hero nav ul {
+    margin: 20px 80px 0 0;
+    text-align: right;
+}
+
+.hero nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid white;
+    margin-left: 16px;
+}
+
+.hero nav a {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 16px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero nav a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
     margin: 50px auto 0;
     width: 80%;
     text-align: center;
     color: #fff;
 }
-.hero-content p{
-    background-color: rgba(0, 0, 0, 0.7);
-    font-size: 18px;
-    display: inline-block;
 
-}
-.hero-content h1{
+.hero-content h1 {
     font-size: 56px;
     color: #fff;
     text-transform: uppercase;
     text-shadow: 2px 2px 2px #000;
-
+    margin-top: 245px;
+    margin-bottom: 0;
 }
 
-footer{
+.hero-content p {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px;
+    border-bottom: solid 1px #fff;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    max-width: 860px;
+}
+
+section {
+    padding-top: 32px;
+}
+
+article {
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+article h2 {
+    border-bottom: 2px solid #ccc;
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+.btn {
+    background-color: #cdc7c3;
+    display: inline-block;
+    padding: 12px;
+    color: blue;
+    border-radius: 6px;
+}
+
+.rodape {
     background-image: url(/Udemy_Web/ProjetoCSS_Inicio/imagens/bg-3.jpg);
     background-position: top;
     background-repeat: no-repeat;
@@ -64,8 +105,11 @@ footer{
     background-attachment: fixed;
     filter: brightness(80%);
     /*background-color: #333;*/
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 30px;
     margin: 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
 }
