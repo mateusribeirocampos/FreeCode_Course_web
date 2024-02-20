@@ -23,17 +23,17 @@ body {
     display: inline-block;
     list-style-type: none;
     border: 1px solid white;
-    margin-left: 16px;
+    margin-left: 32px;
 }
 
 .hero nav a {
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 16px;
+    padding: 12px;
     display: block;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 2px;
     font-weight: bold;
 }
